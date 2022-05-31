@@ -1,45 +1,45 @@
-# ethereum_blockchain_dapp_flutter (https://github.com/GitLeandroHub/Ethereum_Flutter_Dapp_SmartContract_Blockchain_web3_Metamask)
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-A Dapp (Decentralized application) that uses smart contract (Ropsten Testnet) and Metamask for the Privatekey and wallet from Ethereum blockchain and connects all together by using Flutter framework and Dart language (Web3dart)
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-For this project some tools and skills were needed:
-- Dart language (Web3dart)
-- Solidity (for Smart Contract)
-- Remix to compile and deploy the Smart Contract (Abi, contract address)
-- Metamask for the Ropsten testnet wallet (wallet address and Private key)
-- Vscode for the flutter and dart code and Emulation - windows desktop (Dapp)
-- Infura for watch and manage the ropsten network
-- .env to Avoid Uploading the Private Key to GitHub and to hide from the code itself
-- velocity_x for fast and beautiful ux designs of the app
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
 
-Gif showing compiler and deploy of the Smart Contract for the creation of the contract address with injected web3 wallet using ropsten testnet and Metamask
-![](Gifs/compiler_and_deploy.gif)
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter decentralized application. ">
 
-Gif showing initial status (0 balance) after the creation of the contract
-![](Gifs/0_balance.gif)
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="SWAPNEX.IO">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-Gif showing the first deposit into the contract address from the wallet
-![](Gifs/deposit.gif)
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
-Gif showing the balance of the contract after deposit on the Dapp and on Remix
-![](Gifs/balance_1.gif)
-
-Gif showing the Transaction Hash generated from etherscan into the Dapp and checked into etherscan
-![](Gifs/tx_hash.gif)
-
-Gif showing another deposit of 54 made from the dapp
-![](Gifs/deposit_of_54.gif)
-
-Gif showing withdraw of 33 made from Remix
-![](Gifs/withdraw_of_33.gif)
-
-Gif showing balance after withdraw refresh button from Dapp 
-![](Gifs/saldo_22.gif)
-
-Gif showing withdraw using button from the dapp
-![](Gifs/withdraw_10_pelo_dapp.gif)
-
-Last gif showing balance after the withdraw of 10
-![](Gifs/saldo_de_12_no_app_e_remix.gif)
-
-Credits and Thanks for mtechviral for the support.
+  <title>SWAPNEX/COTP ARHITRATON</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
